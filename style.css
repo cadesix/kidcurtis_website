@@ -1,0 +1,83 @@
+body {
+    font-family: Times, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: black; /* Black text for contrast */
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black; /* Changed to black to be visible on white background */
+    font-weight: bold;
+}
+
+section {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px; /* Fixed space between images */
+    justify-content: center; /* Center the items horizontally */
+    max-width: 1200px; /* Set a maximum width for the grid */
+    margin: 0 auto; /* Center the grid container */
+}
+
+.item {
+    flex: 1 1 calc(33.333% - 18px); /* Set flex properties to allow resizing */
+    max-height: 300px; /* Set maximum height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto; /* Ensure the image maintains aspect ratio */
+    object-fit: contain; /* Ensure the entire image fits within the container */
+    display: block;
+}
+
+.illustration-grid .item {
+    flex: 1 1 calc(33.333% - 18px); /* Three columns, resizable */
+}
+
+.fashion-grid .item {
+    flex: 1 1 calc(25% - 18px); /* Four columns, resizable */
+}
+
+.charcoal-grid .item {
+    flex: 1 1 calc(25% - 18px); /* Four columns, resizable */
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 100%;
+        max-height: none; /* Remove max-height on mobile */
+    }
+}
