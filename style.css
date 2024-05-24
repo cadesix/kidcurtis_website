@@ -16,6 +16,10 @@ h1 {
     font-size: 48px;
 }
 
+h3 {
+    font-size: 36px;
+}
+
 .links {
     text-align: center;
     margin: 20px 0;
@@ -23,7 +27,8 @@ h1 {
 
 .links a {
     margin: 0 10px;
-    text-decoration: none;
+    font-size: 36px;
+    text-decoration: underline;
     color: black; /* Changed to black to be visible on white background */
     font-weight: bold;
 }
@@ -31,6 +36,7 @@ h1 {
 section {
     margin: 20px 0;
     padding: 0 20px;
+    margin-bottom: 96px;
 }
 
 section h3 {
