@@ -22,6 +22,11 @@ h3 {
 
 .links {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    align-items: top;
     margin: 20px 0;
 }
 
@@ -31,6 +36,17 @@ h3 {
     text-decoration: underline;
     color: black; /* Changed to black to be visible on white background */
     font-weight: bold;
+}
+
+.links img {
+    height: 300px;
+}
+
+.short {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Change this to 'flex-start' to align to the top */
+    align-items: center;
 }
 
 section {
