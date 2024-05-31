@@ -120,4 +120,13 @@ section h3 {
         width: 350px;
         object-fit: cover;
     }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 18px; /* Fixed space between images */
+        justify-content: center; /* Center the items horizontally */
+        max-width: 1200px; /* Set a maximum width for the grid */
+        margin: 0 auto; /* Center the grid container */
+    }
 }
